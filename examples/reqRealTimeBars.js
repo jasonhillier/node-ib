@@ -4,7 +4,7 @@
 
 'use strict';
 
-require('colors');
+//require('colors');
 
 var _ = require('lodash');
 
@@ -18,7 +18,7 @@ var ib = new (require('..'))({
   if (!_.contains(['realtimeBar'], event)) {
     console.log('%s %s', (event + ':').yellow, JSON.stringify(args));
   }
-}).on('realtimeBar', function (reqId, time, open, high, low, close, volume, wap, count) {
+}).on('historicalData', function (reqId, time, open, high, low, close, volume, wap, count) {
   console.log(
     '%s %s%d %s%d %s%d %s%d %s%d %s%d %s%d %s%d %s%d',
     '[realtimeBar]'.cyan,

@@ -6,7 +6,7 @@
 
 var util = require('util');
 
-require('colors');
+//require('colors');
 
 var _ = require('lodash');
 
